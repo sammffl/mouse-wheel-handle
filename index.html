@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Mouse Wheel Handle</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="index.css"/>
+
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    <script src="bower_components/respond/src/respond.js"></script>
+    <![endif]-->
+
+</head>
+<body id="page-top">
+
+<nav class="page-bar">
+    <ul>
+        <li><a href="#" class="page-scroll current" data-role="1">1</a></li>
+        <li><a href="#" class="page-scroll" data-role="2">2</a></li>
+        <li><a href="#" class="page-scroll" data-role="3">3</a></li>
+        <li><a href="#" class="page-scroll" data-role="4">4</a></li>
+        <li><a href="#" class="page-scroll" data-role="5">5</a></li>
+        <li><a href="#" class="page-scroll" data-role="6">6</a></li>
+    </ul>
+</nav>
+
+<div id="main-page" class="container-fluid">
+    <div class="row pages current" id="page-1" data-role="1">
+        <div class="col-xs-12">content-1</div>
+    </div>
+    <div class="row pages" id="page-2" data-role="2">
+        <div class="col-xs-12">content-2</div>
+    </div>
+    <div class="row pages" id="page-3" data-role="3">
+        <div class="col-xs-12">content-3</div>
+    </div>
+    <div class="row pages" id="page-4" data-role="4">
+        <div class="col-xs-12">content-4</div>
+    </div>
+    <div class="row pages" id="page-5" data-role="5">
+        <div class="col-xs-12">content-5</div>
+    </div>
+    <div class="row pages" id="page-6" data-role="6">
+        <div class="col-xs-12">content-6</div>
+    </div>
+</div>
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="mouseWheelHandle.js"></script>
+<script>
+    (function ($) {
+
+        $(function () {
+            mouseWheelHandle.init({
+                mainPage: "#main-page",
+                sideBar: ".page-bar",
+                pageAmount: 6,
+                animateTime: 800
+            });
+        });
+
+    })($);
+</script>
+</body>
+</html>
