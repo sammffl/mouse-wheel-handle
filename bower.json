@@ -1,0 +1,27 @@
+{
+  "name": "mouse-wheel-handle",
+  "description": "处理鼠标滚轮翻页动画",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "mousewheel"
+  ],
+  "authors": [
+    "sammffl"
+  ],
+  "license": "MIT",
+  "homepage": "index",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "html5shiv": "^3.7.3",
+    "respond": "^1.4.2",
+    "bootstrap": "^3.3.6",
+    "jquery-mousewheel": "^3.1.13"
+  }
+}
